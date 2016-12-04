@@ -1,8 +1,3 @@
-$(document).ready(function(){
-  inicioSesion();
-});
-
-function inicioSesion(){
 $("#frm-inicio").submit(function(evento){
   $.post("https://comercial2016.herokuapp.com/api/v1/usuario",{
     email: $("#email").val(),
@@ -22,4 +17,3 @@ $("#frm-inicio").submit(function(evento){
     alert(datosJSON.mensaje);
   });
 });
-};
