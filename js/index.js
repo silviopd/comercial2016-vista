@@ -22,4 +22,4 @@ $("#frm-inicio").submit(function(evento){
     alert(datosJSON.mensaje);
   });
 });
-}
+};
