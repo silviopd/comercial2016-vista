@@ -12,7 +12,7 @@ $("#frm-inicio").submit(function(evento){
 
     for (var i = 0; i < datosJSON.length; i++) {
       if(datosJSON[i].estado === 200){
-        document.location= "menu.html?dato="+ datosJSON[i].dato;
+        document.location= "principal.vista.html?dato="+ datosJSON[i].dato;
       }else{
         alert(datosJSON[i].dato);
       }
