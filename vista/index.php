@@ -10,17 +10,16 @@
         <title>Iniciar Sesion</title>
 
         <!-- Bootstrap -->
-        <link href="../util/gentelella/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Font Awesome -->
-        <link href="../util/gentelella/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
         <!-- NProgress -->
-        <link href="..util/gentelella/nprogress/nprogress.css" rel="stylesheet">
+        <link href="css/nprogress.css" rel="stylesheet">
         <!-- Animate.css -->
-        <link href="../util/gentelella/animate.min.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
 
         <!-- Custom Theme Style -->
-        <link href="../util/gentelella/build/css/custom.min.css" rel="stylesheet">
-        <link rel="icon" href="../imagenes/logousat-ConvertImage.ico">
+        <link href="css/custom.min.css" rel="stylesheet">
     </head>
 
     <body class="login">
@@ -31,16 +30,16 @@
             <div class="login_wrapper">
                 <div class="animate form login_form">
                     <section class="login_content">
-                        <form action="../controlador/Sesion.validar.controlador.php" method="post"> 
+                        <form id="frm-inicio" method="post"> 
                             <!-- get = mandar los datos por el url, visible-->
                             <!-- post = mandar los datos por el url, invisible, mas seguro-->
                             <h1>Iniciar Sesión</h1>
                             <div>
-                                <input name="txtEmail" type="email" class="form-control" placeholder="Usuario(email)" required="" autofocus="" />
+                                <input name="txtEmail" id="email" type="email" class="form-control" placeholder="Usuario(email)" required="" autofocus="" />
                                 <!--requiered = validar si la caja de texto esta en blanco-->
                             </div>
                             <div>
-                                <input name="txtClave" type="password" class="form-control" placeholder="Contraseña" required="" />
+                                <input name="txtClave" id="password" type="password" class="form-control" placeholder="Contraseña" required="" />
                             </div>
 
                             <div>
@@ -107,6 +106,7 @@
                     </section>
                 </div>
             </div>
+            <script src="js/index.js"></script>
         </div>
     </body>
 </html>
